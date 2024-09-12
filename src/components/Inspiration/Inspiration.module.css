@@ -1,0 +1,24 @@
+.inspirationSection {
+  text-align: center;
+  margin: 50px auto;
+  padding: 40px 20px;
+}
+
+.inspirationSection h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.inspirationGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px;
+  justify-items: center; /* Center the images horizontally */
+}
+
+.inspirationItem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the images cover the available space */
+}
