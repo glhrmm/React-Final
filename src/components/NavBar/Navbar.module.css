@@ -1,0 +1,74 @@
+/* Header section container */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px; /* Adjust based on the actual height of your Navbar */
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 50px; /* Adjust the logo size if needed */
+  height: auto;
+  margin-left: 80%;
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  gap: 20px; /* Adjust gap if needed */
+  list-style: none;
+  margin-right: 5%;
+  align-items: center;
+}
+
+.navLinks li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #ff7a59; /* Hover color for links */
+}
+
+/* Responsive Behavior */
+@media (max-width: 1024px) {
+  .navLinks {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavBar {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust for stacking */
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 40px; /* Adjust logo size for mobile if needed */
+  }
+}

@@ -1,0 +1,71 @@
+.missionSection {
+  padding: 60px 20px;
+  background-color: #363636;
+  text-align: center;
+}
+
+.missionContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.missionContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.missionContent p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.missionIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconBox p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+}
+
+.iconBox:hover .icon {
+  /* Target the icon inside the hovered iconBox */
+  animation: tilt 0.5s ease;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg); /* Start at normal position */
+  }
+  25% {
+    transform: rotate(-5deg); /* Tilt to the left */
+  }
+  50% {
+    transform: rotate(5deg); /* Tilt to the right */
+  }
+  75% {
+    transform: rotate(-5deg); /* Back to the left */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to normal */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .missionIcons {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
