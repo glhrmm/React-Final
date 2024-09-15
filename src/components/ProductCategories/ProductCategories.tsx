@@ -1,6 +1,5 @@
-import styles from './ProductCategories.module.css'; // Import CSS module
+import styles from './ProductCategories.module.css'; 
 
-// Placeholder images and categories
 const categories = [
   { name: 'Shirts', imgSrc: 'src/assets/Categories-Image/shirts.jpg' },
   { name: 'Jeans', imgSrc: 'src/assets/Categories-Image/jeans.jpg' },

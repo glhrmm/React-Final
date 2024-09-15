@@ -1,0 +1,132 @@
+.featuredSection {
+  background-image: url("src/assets/featuredProductbckgrnd.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  height: 50vh;
+  flex-direction: row;
+  margin-top: -10rem;
+}
+
+.textSection {
+  flex: 1;
+  max-width: 60%;
+  margin-left: 6rem;
+}
+
+.textSection h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.textSection p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 4rem;
+  font-family: "Arial", sans-serif;
+}
+
+.textSection strong {
+  font-weight: bold;
+}
+
+.ctaButton {
+  padding: 15px 30px;
+  background-color: #ff7a59;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  border-radius: 8px;
+}
+
+.ctaButton:hover {
+  background-color: #e6694f;
+  color: white;
+  border-radius: 25px;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  margin-right: 4rem;
+}
+
+.imageSection img {
+  max-width: 100%;
+  max-height: 470px;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: rotate(15deg);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.imageSection img:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .featuredSection {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 20px 20px;
+  }
+
+  .textSection {
+    margin-left: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .textSection h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .textSection p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .ctaButton {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .imageSection {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imageSection img {
+    max-width: 80%;
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .textSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .textSection p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .imageSection img {
+    max-width: 90%;
+  }
+}

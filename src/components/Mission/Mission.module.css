@@ -1,10 +1,17 @@
 .missionSection {
-  padding: 60px 20px;
+  background-image: url('src/assets/featuredProductbckgrnd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;  padding: 60px 20px;
   background-color: #363636;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
 .missionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -12,12 +19,16 @@
 .missionContent h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .missionContent p {
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: white;
+  max-width: 800px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .missionIcons {
@@ -40,29 +51,27 @@
 }
 
 .iconBox:hover .icon {
-  /* Target the icon inside the hovered iconBox */
   animation: tilt 0.5s ease;
 }
 
 @keyframes tilt {
   0% {
-    transform: rotate(0deg); /* Start at normal position */
+    transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-5deg); /* Tilt to the left */
+    transform: rotate(-5deg);
   }
   50% {
-    transform: rotate(5deg); /* Tilt to the right */
+    transform: rotate(5deg);
   }
   75% {
-    transform: rotate(-5deg); /* Back to the left */
+    transform: rotate(-5deg);
   }
   100% {
-    transform: rotate(0deg); /* Return to normal */
+    transform: rotate(0deg);
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .missionIcons {
     flex-direction: column;
